@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{site.title}} - {{ title or meta.title }}</title>
+
+        <link rel="stylesheet" href="main.scss"/>
+    </head>
+
+    <body>
+        <main id="main" class="main" tabindex="-1">
+            <div class="container py-4">
+                {{ content | safe }}
+            </div>
+        </main>
+
+        <script type="text/javascript" src="{{ '/scripts/bootstrap/bootstrap.bundle.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/scripts/site.js' | url }}"></script>
+    </body>
+
+</html>
